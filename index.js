@@ -25,7 +25,7 @@ function watchNextPage() {
 function renderResult(result) {
   return `
     <div>
-      <a href="https://www.youtube.com/watch?v=${result.id.videoId}" target="blank"> <img src="${result.snippet.thumbnails.default.url}"></a><a href="https://www.youtube.com/channel/${result.snippet.channelId}" target="blank"><p>More from this channel</p></a>
+      <a href="https://www.youtube.com/watch?v=${result.id.videoId}" target="blank"> <img src="${result.snippet.thumbnails.default.url}"  alt="Thumbnail image of ${result.snippet.title} video"></a><a href="https://www.youtube.com/channel/${result.snippet.channelId}" target="blank"><p>More from this channel</p></a>
     </div>
   `;
 }
